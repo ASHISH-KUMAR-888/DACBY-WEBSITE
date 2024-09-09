@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.blogs_container{
+    height: 800px;
+    width: 100vw;
+    padding: 10px;
+    background: #0D1625;
+}
+
+.blog_title{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog_title h2{
+   font-weight: 900;
+   color: white; 
+   letter-spacing: 2px;
+}
+
+.blogs{
+  /*  min-height: 20px; */
+    width: 100%;
+}
+
+.blogs .one{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.blogs .one:hover{
+    transform: scale(1.02);
+}
+
+.blogs .one img{
+    height: 200px;
+    width: 100%;
+}
+
+.blogs .one .blog1{
+    height: 105px;
+    width: 100%;
+    background: #483FEB;
+    color: white;
+    font-weight: 900;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.blogs .one .blog1 h2{
+ /*  font-size: 17px;  */
+    letter-spacing: 2px;
+    
+    font-size: 12px; 
+    line-height: 18px; 
+}
+
+.blogs .one .blog1 p{
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+.blogs .two{
+    height: 150px;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.blogs .two:hover{
+    transform: scale(1.02);
+}
+
+.blogs .two img{
+    height: 100%;
+    width: 60%;
+}
+
+.blogs .two .blog2{
+    height: 100%;
+    width: 45%;
+    color: white;
+    font-weight: 900;
+    background: #483FEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.blogs .two .blog2 h2{
+   /* font-size: 17px; */
+    letter-spacing: 2px; 
+    font-size: 10px;
+    line-height: 18px;
+}
+
+.blogs .two .blog2 p{
+    letter-spacing: 1px;
+    font-size: 10px;
+    line-height: 18px;
+}
+
+
+.blogs .three{
+    height: 200px;
+    width: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.blogs .three:hover{
+    transform: scale(1.02);
+}
+
+.blogs .three img{
+    height: 50%;
+    width: 100%;
+}
+
+.blogs .three .blog3{
+   height: 52%;
+   width: 100%;
+   font-weight: 900;
+   color: white; 
+   background: #483FEB; 
+   padding-left: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+}
+
+.blogs .three .blog3 h2{
+   font-size: 8px;
+   letter-spacing: 2px; 
+ /*  text-align: center; */
+   line-height: 18px;
+   word-break: break-word;
+}
+
+.blogs .three .blog3 p{
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+
+
+.blogs .margin{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+
+.blogs .margin > div:nth-child(-n+1){
+    margin-right: 10px;
+}
+
+
+
+@media screen and (min-width: 308px){
+    
+.blogs .one .blog1 h2{
+    font-size: 14px; 
+    line-height: 20px;
+}
+
+.blogs .one .blog1 p{
+    font-size: 14px;
+}
+    
+
+
+.blogs .two .blog2 h2{
+    font-size: 14px; 
+    line-height: 20px;
+}
+
+.blogs .two .blog2 p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.blogs .three .blog3 h2{
+   font-size: 11px;
+   line-height: 20px;
+   word-break: normal;
+}
+
+.blogs .three .blog3 p{
+    font-size: 11px;
+}
+    
+    
+}
+
+
+
+
+
+@media screen and (min-width: 768px){
+    
+.blogs_container{
+    width: 70vw;
+    margin: 0 auto;
+}  
+
+.blogs .one .blog1 h2{
+    font-size: 15px;
+ }
+
+ .blogs .one .blog1 p{
+    font-size: 15px;
+}
+      
+.blogs .two .blog2 h2{
+    line-height: 23px;
+    font-size: 15px;
+ }
+
+ .blogs .two .blog2 p{
+    font-size: 15px;
+}
+
+.blogs .three .blog3 h2{
+   font-size: 17px;
+   line-height: 23px;
+   font-size: 15px;
+}
+
+.blogs .three .blog3 p{
+    font-size: 15px;
+}
+    
+    
+}
+
+
+
+
+@media screen and (min-width: 1024px){
+    
+    
+.blogs_container{
+    width: 50vw;
+}      
+    
+.blogs .one .blog1 h2{
+    font-size: 16px;
+}
+
+.blogs .two .blog2 h2{
+    line-height: 25px;
+    font-size: 16px;
+ }
+
+.blogs .three .blog3 h2{
+   line-height: 25px;
+   font-size: 16px;
+
+}
+    
+    
+}
+

@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.last_footer{
+    height: 30px;
+    width: 100vw;
+    background-image: url(images/Last_Footer/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

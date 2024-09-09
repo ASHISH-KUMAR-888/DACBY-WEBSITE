@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.feedback_container{
+    height: 400px;
+    width: 80vw;
+    background: #0D1625;
+    padding: 15px 30px;
+    margin: 0 auto;
+    display: none;
+}
+
+.feedback_title{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.feedback_title h3{
+    color: #A7C9E1;
+    letter-spacing: 1px;
+}
+
+.customer_review{
+    position: relative;
+    width: 100%;
+}
+
+.customer_reviews{
+    display: flex;
+    overflow: auto;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+}
+
+.customer_reviews::-webkit-scrollbar{
+    display: none;
+}
+
+.customer_reviews{
+    scrollbar-width: none;
+}
+
+.customer_reviews{
+    -ms-overflow-style: none;
+}
+
+.customer_review > div:nth-child(-n+2){
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #34BED7, #1484CF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(50% - 20px);
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+
+.customer_review .previous{
+    left: 0;
+}
+
+.customer_review .next{
+    right: 0;
+}
+
+.material-symbols-outlined.slide_btn{
+    color: white;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+
+@media screen and (min-width: 1024px){
+
+.feedback_container{
+    display: block;
+}
+
+
+}

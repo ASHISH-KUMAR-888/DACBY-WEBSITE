@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.guarantee_container{
+    background: #0D1625;
+    height: 500px;
+    width: 100vw; 
+    padding: 20px 0; 
+}
+
+.guarantee_title{
+    margin: 10px 0;
+}
+
+.guarantee_title h3{
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.delivery_status{
+    height: 90%;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr .5fr;   
+    grid-gap: 15px;
+}
+
+.delivery_status > div{
+    border: 3px solid #4D5763;
+    border-radius: 20px;
+    background: #0D1625; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.delivery_status > div:hover{
+    transform: scale(1.04);
+}
+
+.delivery_image{
+    height: 70%;
+    width: 75%;
+}
+
+.delivery_image img{
+    height: 100%;
+    width: 100%;
+}
+
+.delivery_title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.delivery_title p{
+    color: white; 
+    font-weight: 700;
+    font-size: 11px;
+    text-align: center;
+    line-height: 16px; 
+}
+
+
+
+@media screen and (min-width: 430px){
+  
+   .guarantee_container{
+    height: 50%;
+    width: 87%;
+    margin: 0 auto;
+} 
+
+   .delivery_title p{
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+   .guarantee_title h3{
+    letter-spacing: 3px;
+}
+
+
+
+}
+
+
+
+@media screen and (min-width: 768px){
+
+ .guarantee_container{
+    height: 45%;
+    width: 65%;
+} 
+
+   .delivery_title p{
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+}  
+
+
+
+
+
+@media screen and (min-width: 1024px){
+
+ .guarantee_container{
+    height: 70vh;
+    width: 70%;
+} 
+
+.delivery_status{
+    height: calc(100% - 25px);
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;   
+    grid-gap: 15px;
+}
+
+.delivery_title{
+    padding: 0 20px;
+}
+
+   .delivery_title p{
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 30px;
+    margin-bottom: 17px;
+}
+
+
+}  
+
+
+
+
+

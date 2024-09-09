@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.app_download{
+    width: 100vw;
+    background: #0D1625;
+    padding: 20px;
+}
+
+.app_download_title{
+    min-height: 59px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.app_download_title h3{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 11px;
+    line-height: 24px;
+}
+
+.app_download_title i{
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.app_download_links{
+    min-height: 10px; 
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.app_download_link{
+    height: 35px;
+    width: 100px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+
+
+.app_download_link img{
+    height: 35px;
+    width: 100px; 
+}
+
+
+@media screen and (min-width: 400px){
+
+    .app_download{
+     width: 70vw;
+    }
+ }
+
+
+
+@media screen and (min-width: 1024px){
+
+   .app_download{
+    width: 100vw;
+    padding: 0;
+   }
+}

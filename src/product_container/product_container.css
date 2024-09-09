@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.product_slider1{
+    position: relative;
+    margin-top: 60px;
+}
+
+.product_slider1 > div:nth-child(-n+2){
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #34BED7, #1484CF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(50% - 20px);
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.product_slider1 .previous{
+    left: 0;
+}
+
+.product_slider1 .next{
+    right: 0;
+}
+
+.material-symbols-outlined.slide_btn{
+    color: white;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.product_slider{
+    height: 400px;
+    width: 100vw;
+    background: #0D1624;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    flex-wrap: wrap;
+}
+
+.product_slider1 .title h2{
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+
+.product_slider::-webkit-scrollbar{
+    display: none;
+}
+
+.product_slider{
+    scrollbar-width: none;
+}
+
+.product_slider{
+    -ms-overflow-style: none;
+}
+
+.product_slider{
+    overflow: auto;
+}
+
+
+@media screen and (min-width: 250px){
+
+    .product_slider{
+     flex-wrap: nowrap;
+    }
+    .product_slider1{
+     margin-top: 0;
+     }
+}
+
+
+
+@media screen and (min-width: 768px){
+    .product_slider{
+        width: 100%;
+    }
+
+    .product_slider1{
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .product_slider1 .icon_1 p{
+        height: 40px;
+        width: 40px;
+        background: cyan;
+        color: aliceblue;
+        position: absolute;
+        top: calc(50% - 40px);
+        z-index: 3;
+    }
+    
+    .product_slider1 .icon_2 p{
+        border: 5px solid gold;
+        color: aliceblue;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+    
+    }
+
+    .product_slider{
+    height: 320px; 
+}
+
+.product_slider1 > div:nth-child(-n+2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
+@media screen and (min-width: 1024px){
+
+.product_slider1{
+    margin-top: 0;
+}
+
+ .product_slider{
+    height: 305px; 
+}
+
+}

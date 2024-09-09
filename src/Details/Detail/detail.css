@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.Main_Detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 300px;
+    margin-bottom: 50px;
+}
+
+
+@media screen and (min-width: 1024px){
+
+    .Main_Detail{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-bottom: 0;
+        padding: 0 40px;
+    }
+    
+}
