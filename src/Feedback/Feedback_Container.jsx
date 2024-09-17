@@ -48,6 +48,7 @@ arrow_forward_ios
 return(
     
     <Feedback
+    key={value.id}
     image={value.image}
     title={value.title}
     para={value.para}

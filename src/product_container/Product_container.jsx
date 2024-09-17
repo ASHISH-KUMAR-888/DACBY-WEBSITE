@@ -3,6 +3,7 @@ import "./product_container.css";
 import Product from "../product/Product.jsx";
 import Slider from "../Modules/Slider.jsx";
 import Pre_Order from "../product_json/Pre_Order.jsx";
+import { Link } from "react-router-dom";
 
 
 function Product_container({title, DATA}) {
@@ -41,14 +42,18 @@ arrow_forward_ios
         {DATA.map((val)=>{
 
 return(
+
+<Link to={`/product/${val.id}`} key={val.id} className="link_style">
     <Product
-    key={DATA.id}
+    key={val.id}
     image={val.image}
     title={val.title}
     price={val.price}
     old_price={val.old_price}
    
     />
+</Link>
+
 )
 
 })}

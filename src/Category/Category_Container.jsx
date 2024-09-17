@@ -62,6 +62,7 @@ arrow_forward_ios
     return(
 
     <Category 
+    key={value.id}
     image={value.image}
     title={value.title}
     />

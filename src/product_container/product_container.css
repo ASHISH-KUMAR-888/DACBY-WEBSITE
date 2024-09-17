@@ -5,6 +5,18 @@
     user-select: none;
 }
 
+.link_style{
+    display: inline-block !important;
+    text-decoration: none !important;
+   
+    /* min-height: 305px;
+    width: 18vw;   */
+    /* border: 5px solid red; */
+    margin-right: 10px;
+    padding-top: 8px;
+    
+}
+
 .product_slider1{
     position: relative;
     margin-top: 60px;
@@ -79,11 +91,15 @@
      flex-wrap: nowrap;
     }
     .product_slider1{
-     margin-top: 0;
+     margin-top: 30px;
      }
 }
 
-
+@media screen and (min-width: 500px){
+    .product_slider1{
+     margin-top: 0;
+     }
+}
 
 @media screen and (min-width: 768px){
     .product_slider{
